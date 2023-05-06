@@ -11,9 +11,16 @@ footer {
 }
 .footer-container p {
     margin:0;
+    width: max-content;
 }
 .social-links {
     display: flex;
     align-items: center;
     gap: 7px;
+}
+
+@media (max-width: 420px) {
+    .footer-container {
+        font-size: 12px;
+    }
 }

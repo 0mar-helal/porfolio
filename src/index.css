@@ -3,12 +3,14 @@
 body {
   margin: 0;
   font-family: "Raleway", serif !important;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow-x: clip !important;
 }
 
 html {
+  overflow-x: clip !important;
   --dark-bg: #160a2d;
   --light-bg: #211141;
   --purple-star: #a141f2;
@@ -26,9 +28,9 @@ button:focus {
 }
 
 .no-scroll {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+  overflow: hidden !important;
+  width: 100vw !important;
+  height: 100vh !important;
 }
 
 .star {
@@ -186,6 +188,14 @@ button:focus {
     height: 270px;
   }
 }
+
+@media (max-width: 420px) {
+  .image-holder {
+    width: 220px;
+    height: 220px;
+  }
+}
+
 .hi-image {
   position: absolute;
   width: 100%;
@@ -207,17 +217,9 @@ button:focus {
   animation: star-orange-1 1.6s infinite ease-in-out alternate;
 }
 
-/* About Section */
-.about-section {
-  scroll-margin-top: 90px;
-  position: relative !important;
-  background-color: var(--light-bg);
-  color: white !important;
-}
-
 /* Contact */
 .contact {
-  scroll-margin-top: 90px;
+  scroll-margin-top: 90px !important;
   padding: 60px 0 60px;
   background-color: var(--light-bg);
   position: relative;
@@ -243,7 +245,6 @@ button:focus {
 .contact .image-holder {
   display: block;
   margin: 30px auto 20px !important;
-  width: 300px;
 }
 
 .contact .image-holder img {
@@ -348,7 +349,7 @@ button:focus {
 
 /* Projects Section */
 .projects {
-  scroll-margin-top: 90px;
+  scroll-margin-top: 90px !important;
   padding: 60px 0 60px;
   background-image: linear-gradient(45deg, var(--dark-bg), var(--light-bg), var(--dark-bg));
   min-height: 90vh;

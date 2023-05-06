@@ -1,5 +1,7 @@
 .about-section {
-    scroll-margin-top: 90px;
+    scroll-margin-top: 90px !important;
+    color: white !important;
+    background-color: var(--light-bg);
     position: relative;
     padding-top: 60px !important;
     padding-bottom: 60px !important;
@@ -26,5 +28,14 @@
     }
     .myAvtar {
         margin: 40px auto;
+        width: 300px !important;
+        height: 300px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .myAvtar {
+        width: 250px !important;
+        height: 250px !important;
     }
 }

@@ -77,6 +77,7 @@ const ContactForm = () => {
                     name="message"
                     id="message"
                     rows="10"
+                    placeholder="Your Message"
                     className={`text-area ${errors.message && touched.message ?"is-invalid":""}`}eholder="Message"
                 />
                 <div className="error">

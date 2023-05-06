@@ -16,40 +16,40 @@ import Github from "../../Images/github.svg"
 const Skills = () => {
     return ( 
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-            <Col data-aos="fade-up" xs={4} md={2} className="skill-icon">
+            <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={Html5} alt="" width="80%" />
             </Col>
-            <Col data-aos="fade-up" xs={4} md={2} className="skill-icon">
+            <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={Css3} alt="" width="80%" />
             </Col>
-            <Col data-aos="fade-up" xs={4} md={2} className="skill-icon">
+            <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={Js} alt="" width="80%" />
             </Col>
-            <Col data-aos="fade-up" xs={4} md={2} className="skill-icon">
+            <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={Sass} alt="" width="80%" />
             </Col>
-            <Col data-aos="fade-up" xs={4} md={2} className="skill-icon">
+            <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={JQuery} alt="" width="80%" />
             </Col>
-            <Col data-aos="fade-up" xs={4} md={2} className="skill-icon">
+            <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={Bootstrap} alt="" width="80%" />
             </Col>
-            <Col data-aos="fade-up" xs={4} md={2} className="skill-icon">
+            <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={Tailwindcss} alt="" width="80%" />
             </Col>
-            <Col data-aos="fade-up" xs={4} md={2} className="skill-icon">
+            <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={Reactjs} alt="" width="80%" />
             </Col>
-            <Col data-aos="fade-up" xs={4} md={2} className="skill-icon">
+            <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={Redux} alt="" width="80%" />
             </Col>
-            <Col data-aos="fade-up" xs={4} md={2} className="skill-icon">
+            <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={MUI} alt="" width="80%" />
             </Col>
-            <Col data-aos="fade-up" xs={4} md={2} className="skill-icon">
+            <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={Git} alt="" width="80%" />
             </Col>
-            <Col data-aos="fade-up" xs={4} md={2} className="skill-icon">
+            <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={Github} alt="" width="80%" />
             </Col>
         </Row>
