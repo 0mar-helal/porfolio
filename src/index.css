@@ -352,7 +352,6 @@ button:focus {
   scroll-margin-top: 90px !important;
   padding: 60px 0 60px;
   background-image: linear-gradient(45deg, var(--dark-bg), var(--light-bg), var(--dark-bg));
-  min-height: 90vh;
 }
 
 .projects .info {

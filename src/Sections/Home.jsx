@@ -9,7 +9,7 @@ const Home = () => {
             {/* stars  */}
             <div id="orange-star" className="star star-org"></div>
             <div id="purple-star" className="star star-pur"></div>
-            <Container fluid className="home-container">
+            <Container className="home-container">
             <Row className='home-content'>
                 <Col md={8} className="home-header">
                 <h1 style={{ paddingBottom: 15 }} className="heading">

@@ -1,3 +1,12 @@
+import youtube from "../Images/youtube.png"
+import netflix from "../Images/netflix.png"
+import maltimart from "../Images/matlimart.png"
+import weather from "../Images/weather.png"
+import reactjs from "../Images/reactjs.svg"
+import tailwindcss from "../Images/tailwindcss.svg"
+import mui from "../Images/material-ui.svg"
+import bootstrap from "../Images/bootstrap.svg"
+
 export const socialLinks = [
     {
         id:1,
@@ -36,20 +45,30 @@ export const projectsData =
 [
     {
         id:1,
-        imageLink:"/youtube.png",
+        imageLink:youtube,
         demoLink:"https://youtube-clone-react.onrender.com/",
         sourceCodeLink:"https://github.com/0mar-helal/youtube-clone-react",
+        techUsed: [reactjs , tailwindcss]
     },
     {
         id:2,
-        imageLink:"/netflix.png",
+        imageLink:netflix,
         demoLink:"https://netflix-clone-react-iv5k.onrender.com/",
         sourceCodeLink:"https://github.com/0mar-helal/netflix-clone-react",
+        techUsed: [reactjs , tailwindcss]
     },
     {
         id:3,
-        imageLink:"/weather.png",
+        imageLink:maltimart,
+        demoLink:"https://multimart-ecommerce.onrender.com",
+        sourceCodeLink:"https://github.com/0mar-helal/multimart-react-ecommerce/",
+        techUsed: [reactjs , bootstrap]
+    },
+    {
+        id:4,
+        imageLink:weather,
         demoLink:"https://weather-app-react-x4t1.onrender.com",
         sourceCodeLink:"https://github.com/0mar-helal/weather-app-react",
+        techUsed: [reactjs , bootstrap]
     },
 ]

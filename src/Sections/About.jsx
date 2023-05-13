@@ -3,8 +3,8 @@ import Skills from "../Components/Skills/Skills";
 import Info from "../Components/Info/Info";
 
 const About = () => {
-    return ( 
-        <Container id="about" fluid className="about-section">
+    return (
+        <section id="about" className="about-section">
             <Container>
                 <h1 className="main-heading">
                     Let Me <span className="purple"> Introduce </span> Myself
@@ -15,7 +15,7 @@ const About = () => {
                 </h1>
                 <Skills />
             </Container>
-        </Container>
+        </section>
     );
 }
 
