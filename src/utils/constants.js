@@ -4,7 +4,6 @@ import maltimart from "../Images/matlimart.png"
 import weather from "../Images/weather.png"
 import reactjs from "../Images/reactjs.svg"
 import tailwindcss from "../Images/tailwindcss.svg"
-import mui from "../Images/material-ui.svg"
 import bootstrap from "../Images/bootstrap.svg"
 
 export const socialLinks = [
@@ -41,8 +40,7 @@ export const socialLinks = [
     },
 ]
 
-export const projectsData = 
-[
+export const projectsData = [
     {
         id:1,
         imageLink:youtube,
@@ -61,7 +59,7 @@ export const projectsData =
         id:3,
         imageLink:maltimart,
         demoLink:"https://multimart-ecommerce.onrender.com",
-        sourceCodeLink:"https://github.com/0mar-helal/multimart-react-ecommerce/",
+        sourceCodeLink:"https://github.com/0mar-helal/multimart-react-ecommerce",
         techUsed: [reactjs , bootstrap]
     },
     {

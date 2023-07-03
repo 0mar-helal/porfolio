@@ -8,6 +8,8 @@ import JQuery from "../../Images/jquery.svg"
 import Bootstrap from "../../Images/bootstrap.svg"
 import Tailwindcss from "../../Images/tailwindcss.svg"
 import Reactjs from "../../Images/reactjs.svg"
+import Nextjs from "../../Images/nextjs.svg"
+import Typescript from "../../Images/typescript.svg"
 import Redux from "../../Images/redux.svg"
 import MUI from "../../Images/material-ui.svg"
 import Git from "../../Images/git.svg"
@@ -26,6 +28,9 @@ const Skills = () => {
                 <img src={Js} alt="" width="80%" />
             </Col>
             <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
+                <img src={Typescript} alt="" width="80%" />
+            </Col>
+            <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={Sass} alt="" width="80%" />
             </Col>
             <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
@@ -39,6 +44,9 @@ const Skills = () => {
             </Col>
             <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={Reactjs} alt="" width="80%" />
+            </Col>
+            <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
+                <img src={Nextjs} alt="" width="80%" />
             </Col>
             <Col data-aos="fade-up" xs={5} md={2} className="skill-icon">
                 <img src={Redux} alt="" width="80%" />
