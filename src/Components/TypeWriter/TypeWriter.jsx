@@ -1,20 +1,21 @@
 import TypewriterComponent from "typewriter-effect";
 import "./typewriter.css";
-const TypeWriter = () => {
-    return ( 
-        <TypewriterComponent
-        options={{
-            strings: [
-            "Frontend Developer",
-            "React.JS Developer",
-            "Software Engineering Student",
-            ],
-            autoStart: true,
-            loop: true,
-            deleteSpeed: 50,
-        }}
-        />
-    );
-}
+import { useEffect, useState } from "react";
+const TypeWriter = ({ roles }) => {
+  const [distructRoles, setDistructRoles] = useState(null);
+  useEffect(() => {
+    setDistructRoles(roles?.map((role) => role.text));
+  }, [roles]);
+  return (
+    <TypewriterComponent
+      options={{
+        strings: distructRoles,
+        autoStart: true,
+        loop: true,
+        deleteSpeed: 50,
+      }}
+    />
+  );
+};
 
 export default TypeWriter;

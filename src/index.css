@@ -1,12 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
-body {
-  margin: 0;
-  font-family: "Raleway", serif !important;
+* {
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: clip !important;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 html {
@@ -19,6 +27,16 @@ html {
   --imp-text-color: #c770f0;
 }
 
+body {
+  margin: 0;
+  font-family: "Raleway", serif !important;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip !important;
+  background-color: var(--light-bg) !important;
+}
+
 .purple {
   color: var(--imp-text-color) !important;
 }
@@ -28,9 +46,10 @@ button:focus {
 }
 
 .no-scroll {
-  overflow: hidden !important;
-  width: 100vw !important;
-  height: 100vh !important;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .star {
@@ -109,7 +128,6 @@ button:focus {
 
 .home-section {
   position: relative;
-  background-image: linear-gradient(45deg, var(--dark-bg), var(--light-bg), var(--dark-bg));
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
@@ -154,10 +172,10 @@ button:focus {
   font-size: 17px;
   border-radius: 5px;
   cursor: pointer;
-  display:flex;
+  display: flex;
   justify-content: center;
-  align-items:center;
-  gap:7px;
+  align-items: center;
+  gap: 7px;
 }
 
 .download-icon {
@@ -173,7 +191,7 @@ button:focus {
   display: flex !important;
   justify-content: end !important;
   margin: 0 !important;
-  padding:0 !important;
+  padding: 0 !important;
 }
 
 .image-holder {
@@ -333,7 +351,7 @@ button:focus {
   color: white;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .contact-section {
     gap: 50px;
   }
@@ -341,7 +359,7 @@ button:focus {
   .or {
     width: 80% !important;
     height: 3px !important;
-    top: 40%;
+    top: 38%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -351,7 +369,6 @@ button:focus {
 .projects {
   scroll-margin-top: 90px !important;
   padding: 60px 0 60px;
-  background-image: linear-gradient(45deg, var(--dark-bg), var(--light-bg), var(--dark-bg));
 }
 
 .projects .info {
@@ -437,15 +454,15 @@ button:focus {
 
 @keyframes pulse {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
 
   50% {
-      transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 

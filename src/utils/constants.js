@@ -1,10 +1,11 @@
-import youtube from "../Images/youtube.png"
-import netflix from "../Images/netflix.png"
-import maltimart from "../Images/matlimart.png"
-import weather from "../Images/weather.png"
-import reactjs from "../Images/reactjs.svg"
-import tailwindcss from "../Images/tailwindcss.svg"
-import bootstrap from "../Images/bootstrap.svg"
+import axios from "axios";
+
+export const BASE_API_LINK= "https://0marhelal.pythonanywhere.com";
+
+export const fetchFromAPI = async (url) => {
+    const { data } = await axios.get(`${BASE_API_LINK}/${url}`);
+    return data;
+};
 
 export const socialLinks = [
     {
@@ -37,36 +38,5 @@ export const socialLinks = [
         viewBox="0 0 30 30">
             <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"></path>
         </svg>,
-    },
-]
-
-export const projectsData = [
-    {
-        id:1,
-        imageLink:youtube,
-        demoLink:"https://youtube-clone-react.onrender.com/",
-        sourceCodeLink:"https://github.com/0mar-helal/youtube-clone-react",
-        techUsed: [reactjs , tailwindcss]
-    },
-    {
-        id:2,
-        imageLink:netflix,
-        demoLink:"https://netflix-clone-react-iv5k.onrender.com/",
-        sourceCodeLink:"https://github.com/0mar-helal/netflix-clone-react",
-        techUsed: [reactjs , tailwindcss]
-    },
-    {
-        id:3,
-        imageLink:maltimart,
-        demoLink:"https://multimart-ecommerce.onrender.com",
-        sourceCodeLink:"https://github.com/0mar-helal/multimart-react-ecommerce",
-        techUsed: [reactjs , bootstrap]
-    },
-    {
-        id:4,
-        imageLink:weather,
-        demoLink:"https://weather-app-react-x4t1.onrender.com",
-        sourceCodeLink:"https://github.com/0mar-helal/weather-app-react",
-        techUsed: [reactjs , bootstrap]
     },
 ]
