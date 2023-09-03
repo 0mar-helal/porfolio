@@ -24,7 +24,7 @@ const Info = () => {
         <Col data-aos="fade-right" md={8} className="about-description">
           <p
             className="about-body"
-            dangerouslySetInnerHTML={{ __html: AboutData?.text }}
+            dangerouslySetInnerHTML={{ __html: AboutData?.text_en }}
           ></p>
         </Col>
         <Col data-aos="fade-left" md={4} className="myAvtar">

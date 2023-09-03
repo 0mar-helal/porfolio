@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const TypeWriter = ({ roles }) => {
   const [distructRoles, setDistructRoles] = useState(null);
   useEffect(() => {
-    setDistructRoles(roles?.map((role) => role.text));
+    setDistructRoles(roles?.map((role) => role.text_en));
   }, [roles]);
   return (
     <TypewriterComponent

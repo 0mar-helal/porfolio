@@ -16,23 +16,20 @@ function App() {
   const [AboutData, setAboutData] = useState(null);
   const [projectsData, setProjectsData] = useState(null);
   const [skillsData, setSkillsData] = useState(null);
+  const [contactData, setContactData] = useState(null);
   const [isLoading,setIsLoading]=useState(true);
   useEffect(()=> {
-    infoData && AboutData && projectsData && skillsData && setIsLoading(false);
-  },[infoData,AboutData,projectsData,skillsData])
-
-  // if (typeof document !== 'undefined') {
-  //   isLoading?document.body.classList.add("no-scroll"):document.body.classList.remove("no-scroll");
-  // }
+    infoData && AboutData && projectsData && skillsData && contactData && setIsLoading(false);
+  },[infoData,AboutData,projectsData,skillsData,contactData])
   useEffect(()=> {
       Aos.init();
       Aos.refresh();
   },[])
   isLoading ?document.body.classList.add("no-scroll"):document.body.classList.remove("no-scroll");
   return (
-    <DataContext.Provider value={{infoData,setInfoData,AboutData,setAboutData,projectsData,setProjectsData,skillsData,setSkillsData}}>
+    <DataContext.Provider value={{infoData,setInfoData,AboutData,setAboutData,projectsData,setProjectsData,skillsData,setSkillsData,contactData,setContactData}}>
         <div className="App">
-          {isLoading && <PreLoader/>}
+          {isLoading ? <PreLoader/>:null}
           <ToastContainer />
           <NavBar/>
           <Home/>
