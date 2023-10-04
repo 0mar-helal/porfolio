@@ -1,22 +1,10 @@
 import { Col, Row } from "react-bootstrap";
 import "./skills.css";
-import { useContext, useEffect } from "react";
-import { fetchFromAPI } from "../../utils/constants";
+import { useContext } from "react";
 import { DataContext } from "../../App";
 
 const Skills = () => {
-  const { skillsData, setSkillsData } = useContext(DataContext);
-  const getSkillsData = async () => {
-    try {
-      const res = await fetchFromAPI("skills");
-      setSkillsData(res);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-  useEffect(() => {
-    getSkillsData();
-  }, []);
+  const { skillsData } = useContext(DataContext);
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       {skillsData?.map((skill) => (

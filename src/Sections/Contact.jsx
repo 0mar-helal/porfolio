@@ -1,22 +1,10 @@
 import { Col, Container, Row } from "react-bootstrap";
 import ContactForm from "../Components/ContactForm/ContactForm";
-import { useContext, useEffect } from "react";
-import { fetchFromAPI } from "../utils/constants";
+import { useContext } from "react";
 import { DataContext } from "../App";
 
 const Contact = () => {
-  const { contactData, setContactData } = useContext(DataContext);
-  const getContactData = async () => {
-    try {
-      const res = await fetchFromAPI("contact");
-      setContactData(res);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-  useEffect(() => {
-    getContactData();
-  }, []);
+  const { contactData } = useContext(DataContext);
   const socialLinks = [
     {
       id: 1,

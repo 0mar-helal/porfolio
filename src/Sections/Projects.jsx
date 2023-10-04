@@ -5,23 +5,11 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper";
 import SlideCard from "../Components/SlideCard/SlideCard";
-import { useContext, useEffect } from "react";
-import { fetchFromAPI } from "../utils/constants";
+import { useContext } from "react";
 import { DataContext } from "../App";
 
 const Projects = () => {
-  const { projectsData, setProjectsData } = useContext(DataContext);
-  const getProjectsData = async () => {
-    try {
-      const res = await fetchFromAPI("projects");
-      setProjectsData(res.reverse());
-    } catch (err) {
-      console.log(err);
-    }
-  };
-  useEffect(() => {
-    getProjectsData();
-  }, []);
+  const { projectsData } = useContext(DataContext);
   return (
     <section className="projects" id="projects">
       <Container>

@@ -1,23 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import TypeWriter from "../Components/TypeWriter/TypeWriter";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { DataContext } from "../App";
-import { BASE_API_LINK, fetchFromAPI } from "../utils/constants";
+import { BASE_API_LINK } from "../utils/constants";
 
 const HomeSection = () => {
-  const { infoData, setInfoData } = useContext(DataContext);
-  const getInfoData = async () => {
-    try {
-      const res = await fetchFromAPI("info");
-      setInfoData(res);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  useEffect(() => {
-    getInfoData();
-  }, []);
+  const { infoData } = useContext(DataContext);
   return (
     <div id="home" fluid className="home-section">
       <Container className="home-container">
